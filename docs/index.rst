@@ -1,25 +1,32 @@
-php-annotations Documentation
-=============================
-This library is an extension for `PHPUnit <https://github.com/sebastianbergmann/phpunit>`_, that allows to write tests
-with help of `Mink`_.
+Home
+====
+This library provides support for source-code annotations in PHP.
 
-Overview
---------
-This library allows to perform following things:
+This library references practices and features established by other languages and platforms with native support
+for annotations, mainly C#/.NET and Java, drawing on the strengths (while observing the limitations) of the
+PHP language.
 
-* use `Mink`_ for browser session control
-* each test in a test case can use independent browser session
-* all tests in a test case can share browser session between them
-* Selenium server connection details are decoupled from tests using them
-* perform individual browser configuration for each test in a test case
-* support for `Sauce Labs <https://saucelabs.com/>`_
-* remote code coverage collection
+The main areas of this Wiki are listed below:
 
-Each mentioned above features is described in more detail below.
+* :doc:`*Roadmap, upgrading and release notes <Roadmap>`
+* :doc:`*Understanding and applying annotations to PHP source code <UsingAnnotations>`
+* :doc:`*Consuming source-code annotations at run-time <ConsumingAnnotations>`
+* :doc:`*Writing your own types of annotations <CustomAnnotations>`
+* :doc:`*See a fully documented, step-by-step example of declarative meta-programming at work <DemoScript>`
+* :doc:`*Review the standard library of annotations <AnnotationLibrary>`
+* :doc:`*Learn more about the design considerations behind this library <DesignConsiderations>`
 
-.. _`Mink`: https://github.com/Behat/Mink
+This library was created by `Rasmus Schultz <https://github.com/mindplay-dk>`_ - a lot of careful planning and design
+went into this project, which was in development for almost a year before it's initial release.
 
 .. toctree::
    :maxdepth: 2
 
    getting-started
+   Roadmap
+   UsingAnnotations
+   ConsumingAnnotations
+   CustomAnnotations
+   DemoScript
+   AnnotationLibrary
+   DesignConsiderations

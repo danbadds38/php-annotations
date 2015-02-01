@@ -6,6 +6,11 @@
 import sys
 import os
 
+from sphinx.highlighting import lexers
+from pygments.lexers.web import PhpLexer
+
+lexers['php'] = PhpLexer(startinline=True)
+
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
